@@ -1,38 +1,63 @@
-#include <iostream>
+/*#include<bits/stdc++.h>
 using namespace std;
-
-class Student
-{
-private:
-    int rollNo;
+class student{
+    private:
+    int rollno;
     string name;
+    public:
+    student(int r,string n){
+        rollno=r;
+        name=n;
+        cout<<"Student object created"<<endl;
+    }
+    void display(){
+        cout<<"Std Roll no : "<<rollno<<endl;
+        cout<<"std name : "<<name<<endl;
 
-public:
-    // Constructor
-    Student(int r, string n)
-    {
-        rollNo = r;
-        name = n;
-        cout << "Student object created" << endl;
     }
 
-    // Member function
-    void display()
-    {
-        cout << "Roll Number: " << rollNo << endl;
-        cout << "Name: " << name << endl;
-    }
-
-    // Destructor
-    ~Student()
-    {
-        cout << "Student object destroyed" << endl;
+    ~student(){
+        cout<<"Student Object Destroyed"<<endl;
     }
 };
-
-int main()
-{
-    Student s1(101, "Arun");
+int main(){
+    student s1(27,"Shree Hari");
     s1.display();
     return 0;
+
+}
+*/
+
+
+#include<bits/stdc++.h>
+using namespace std;
+class student{
+    public:
+    int rollno;
+    string name;
+    public:
+    student(){
+        cout<<"Enter roll no and name of the std"<<endl;
+        cin>>rollno;
+        cin>>name;
+        cout<<"Student object created"<<endl;
+    }
+    void display(){
+        cout<<"Std Roll no : "<<rollno<<endl;
+        cout<<"std name : "<<name<<endl;
+
+    }
+
+    ~student(){
+        cout<<"Student Object Destroyed"<<endl;
+    }
+};
+int main(){
+    student s1;
+;
+    s1.display();
+
+    
+    return 0;
+
 }
